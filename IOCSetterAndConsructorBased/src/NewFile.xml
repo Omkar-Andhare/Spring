@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="s" class="com.Student">
+        <property name="sid" value="101"></property>
+        <property name="sname" value="Omkar"></property>
+        <property name="emp" ref="e"></property>
+    </bean>
+
+    <bean id="e" class="com.Employee">
+        <property name="eid" value="100091"></property>
+        <property name="eName" value="Nikhil"></property>
+    </bean>
+
+</beans>
